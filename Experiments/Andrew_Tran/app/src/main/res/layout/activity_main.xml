@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/clickMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLICK ME"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="71dp" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        tools:layout_editor_absoluteX="279dp"
+        tools:layout_editor_absoluteY="446dp" />
+
+    <Button
+        android:id="@+id/doNotPress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do not press"
+        tools:layout_editor_absoluteX="247dp"
+        tools:layout_editor_absoluteY="398dp" />
+</android.support.constraint.ConstraintLayout>

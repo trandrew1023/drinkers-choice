@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BusinessMakeNewPostActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/business_make_new_post_toolbar"
+            layout="@layout/tool_bar_layout_generic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/business_make_new_post_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post title:"
+            android:layout_below="@+id/business_make_new_post_toolbar"
+            android:textSize="24sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/Black"/>
+
+        <EditText
+            android:id="@+id/business_make_new_post_title_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/business_make_new_post_title_text_view"
+            android:layout_marginEnd="6dp"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/box_around_text_view_with_hard_corner"
+            android:hint="Title"
+            android:padding="4dp"
+            android:selectAllOnFocus="true"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            android:textColor="@color/Black"/>
+
+        <RelativeLayout
+            android:id="@+id/business_make_new_post_line_break_1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?attr/colorPrimaryDark"
+            android:layout_below="@+id/business_make_new_post_title_edit_text"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            />
+
+        <TextView
+            android:id="@+id/business_make_new_post_body_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post Body:"
+            android:layout_below="@+id/business_make_new_post_line_break_1"
+            android:textSize="24sp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/Black"
+            />
+
+        <EditText
+            android:id="@+id/business_make_new_post_body_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/business_make_new_post_body_text_view"
+            android:background="@drawable/box_around_text_view_with_hard_corner"
+            android:gravity="top|start"
+            android:hint="Post body..."
+            android:inputType="textMultiLine"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textAlignment="viewStart"
+            android:padding="4dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:textSize="18dp"
+            android:textColor="@color/Black"/>
+
+        <RelativeLayout
+            android:id="@+id/business_make_new_post_line_break_2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?attr/colorPrimaryDark"
+            android:layout_below="@+id/business_make_new_post_body_edit_text"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/business_make_new_post_add_img_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/business_make_new_post_line_break_2"
+            android:background="@drawable/box_around_text_view_with_hard_corner"
+            android:padding="5dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="(optional) Add image to post: "
+                android:textAllCaps="false"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/Black"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_image_icon"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:id="@+id/business_make_new_post_image_view"
+            android:layout_below="@+id/business_make_new_post_add_img_relative_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/business_make_new_post_line_break_3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?attr/colorPrimaryDark"
+            android:layout_below="@+id/business_make_new_post_image_view"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            />
+
+        <TextView
+            android:id="@+id/business_make_new_post_link_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/business_make_new_post_line_break_3"
+            android:text="(optional) Link: "
+            android:textSize="24sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/Black"/>
+
+        <EditText
+            android:id="@+id/business_make_new_post_link_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/business_make_new_post_link_text_view"
+            android:hint="http://example.com"
+            android:padding="4dp"
+            android:selectAllOnFocus="true"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            android:textColor="@color/Black"/>
+
+        <RelativeLayout
+            android:id="@+id/business_make_new_post_line_break_4"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?attr/colorPrimaryDark"
+            android:layout_below="@+id/business_make_new_post_link_edit_text"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            />
+
+        <Button
+            android:id="@+id/business_make_new_post_submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/business_make_new_post_line_break_4"
+            android:text="SUBMIT"
+            android:textSize="24sp"
+            android:textColor="@color/Black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            />
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

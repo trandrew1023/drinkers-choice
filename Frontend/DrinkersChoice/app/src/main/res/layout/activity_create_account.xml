@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        tools:context=".CreateAccountActivity">
+
+        <TextView
+        android:id="@+id/textViewCreateAccount"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="19dp" />
+
+    <TextView
+        android:id="@+id/textViewFirstName"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name:"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="19dp" />
+
+    <EditText
+        android:id="@+id/editTextFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewFirstName"
+        android:ems="10"
+        android:layout_alignStart="@+id/textViewFirstName"
+        android:inputType="textPersonName"
+        android:hint="Bob"/>
+
+    <TextView
+        android:id="@+id/textViewLastName"
+        android:layout_alignStart="@id/textViewFirstName"
+        android:layout_below="@id/editTextFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name:"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="19dp" />
+
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLastName"
+        android:ems="10"
+        android:layout_alignStart="@+id/textViewFirstName"
+        android:inputType="text"
+        android:hint="Smith"/>
+
+    <TextView
+        android:id="@+id/textViewCreateUsername"
+        android:layout_alignStart="@id/textViewFirstName"
+        android:layout_below="@id/editTextLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Username:"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="19dp" />
+
+    <EditText
+        android:id="@+id/editTextCreateUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/textViewFirstName"
+        android:layout_below="@id/textViewCreateUsername"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="bsmith"/>
+
+    <TextView
+        android:id="@+id/textViewEnterEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_alignStart="@id/textViewFirstName"
+        android:layout_below="@id/editTextCreateUsername"
+        android:text="Enter Email:" />
+
+    <EditText
+        android:id="@+id/editTextEnterEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/textViewFirstName"
+        android:layout_below="@id/textViewEnterEmail"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="bsmith@email.com" />
+
+    <TextView
+        android:id="@+id/textViewCreatePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_alignStart="@id/textViewFirstName"
+        android:layout_below="@id/editTextEnterEmail"
+        android:text="Create Password:" />
+
+    <EditText
+        android:id="@+id/editTextCreatePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/textViewFirstName"
+        android:layout_below="@id/textViewCreatePassword"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textViewConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_alignStart="@id/textViewFirstName"
+        android:layout_below="@id/editTextCreatePassword"
+        android:text="Confirm Password:" />
+
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/textViewFirstName"
+        android:layout_below="@id/textViewConfirmPassword"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/textViewEnterDOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextConfirmPassword"
+            android:layout_alignStart="@id/textViewFirstName"
+            android:text="Enter Date of Birth:"
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="145dp"
+            tools:layout_editor_absoluteY="19dp" />
+
+        <EditText
+            android:id="@+id/editTextEnterDOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewEnterDOB"
+            android:layout_alignStart="@id/textViewFirstName"
+            android:ems="10"
+            android:inputType="date" />
+
+    <Button
+        android:id="@+id/createAccuntButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextEnterDOB"
+        android:layout_centerHorizontal="true"
+        android:text="Create" />
+
+        <ImageView
+            android:id="@+id/imageViewGreenCheckPass"
+            android:layout_width="48dp"
+            android:layout_height="46dp"
+            android:layout_alignBottom="@+id/editTextConfirmPassword"
+            android:layout_toEndOf="@+id/editTextFirstName"
+            android:visibility="gone"
+            app:srcCompat="@drawable/check" />
+
+        <ImageView
+            android:id="@+id/imageViewRedCrossPass"
+            android:layout_width="48dp"
+            android:layout_height="46dp"
+            android:layout_alignBottom="@+id/editTextConfirmPassword"
+            android:layout_toEndOf="@+id/editTextFirstName"
+            android:visibility="gone"
+            app:srcCompat="@drawable/cross" />
+
+        <ImageView
+            android:id="@+id/imageViewGreenCheckUser"
+            android:layout_width="48dp"
+            android:layout_height="46dp"
+            android:layout_alignBottom="@+id/editTextCreateUsername"
+            android:layout_toEndOf="@+id/editTextFirstName"
+            android:src="@drawable/check"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageViewRedCrossUser"
+            android:layout_width="48dp"
+            android:layout_height="46dp"
+            android:layout_alignBottom="@+id/editTextCreateUsername"
+            android:layout_toEndOf="@+id/editTextFirstName"
+            android:src="@drawable/cross"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</ScrollView>

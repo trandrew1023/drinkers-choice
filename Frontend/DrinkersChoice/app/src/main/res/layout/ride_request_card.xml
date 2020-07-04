@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ride_request_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="16dp"
+        android:background="#AAAAAA"
+        android:layout_marginBottom="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="#AAAAAA">
+
+            <TextView
+                android:id="@+id/ride_request_card_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="8dp"
+                android:text="[Username]" />
+
+            <TextView
+                android:id="@+id/ride_request_card_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ride_request_card_username"
+                android:layout_marginBottom="8dp"
+                android:text="FROM: [LOCATION]" />
+
+            <TextView
+                android:id="@+id/ride_request_card_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ride_request_card_from"
+                android:layout_marginBottom="8dp"
+                android:text="TO: [LOCATION]" />
+
+            <TextView
+                android:id="@+id/ride_request_card_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:text="$420.69"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ride_request_card_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/ride_request_card_value"
+                android:text="[Date]"/>
+
+            <TextView
+                android:id="@+id/ride_request_card_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/ride_request_card_to"
+                android:text="Accept"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ride_request_card_hide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ride_request_card_to"
+                android:layout_centerHorizontal="true"
+                android:text="Hide"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ride_request_card_msg_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ride_request_card_to"
+                android:text="Message user"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ride_request_card_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

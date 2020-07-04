@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RequestRideActivity">
+
+    <include
+        android:id="@+id/ride_request_toolbar"
+        layout="@layout/tool_bar_layout_generic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ride_request_toolbar">
+
+        <TextView
+            android:id="@+id/request_a_ride_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Request a ride"
+            android:textSize="24sp"
+            android:layout_marginBottom="16dp"/>
+
+        <RelativeLayout
+            android:id="@+id/ride_request_line_break_1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?attr/colorPrimaryDark"
+            android:layout_below="@+id/request_a_ride_text_view"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <RelativeLayout
+            android:id="@+id/ride_request_use_map_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ride_request_line_break_1"
+            android:background="@drawable/box_around_text_view_with_hard_corner"
+            android:padding="5dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp">
+
+            <ImageView
+                android:id="@+id/ride_request_use_map_image_view"
+                android:layout_alignParentEnd="true"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/map_icon"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/ride_request_use_map_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Make request using google maps"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimaryDark"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ride_request_line_break_2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?attr/colorPrimaryDark"
+            android:layout_below="@+id/ride_request_use_map_relative_layout"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/ride_request_from_text_view"
+            android:layout_below="@+id/ride_request_line_break_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From: "
+            android:textSize="24sp"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/ride_request_from_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ride_request_line_break_2"
+            android:layout_toEndOf="@+id/ride_request_from_text_view"
+            android:hint="Your location"
+            android:selectAllOnFocus="true"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/ride_request_to_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ride_request_from_text_view"
+            android:text="To: "
+            android:textSize="24sp"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/ride_request_to_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ride_request_from_text_view"
+            android:layout_toEndOf="@+id/ride_request_to_text_view"
+            android:hint="Where you are going"
+            android:selectAllOnFocus="true"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/ride_request_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How much your'e willing to pay"
+            android:layout_below="@+id/ride_request_to_text_view"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/request_a_ride_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="$"
+            android:layout_below="@+id/ride_request_payment"/>
+
+        <EditText
+            android:id="@+id/ride_request_payment_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ride_request_payment"
+            android:layout_toEndOf="@+id/request_a_ride_money"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/ride_request_submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

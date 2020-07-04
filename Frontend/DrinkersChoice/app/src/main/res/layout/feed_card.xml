@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_feed_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="16dp"
+        android:background="#AAAAAA"
+        android:layout_marginBottom="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="#AAAAAA">
+
+            <!-- Top Line of post -->
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="6dp"
+                android:text="Username"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/user_name_user_ranking_break"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "
+                android:layout_toEndOf="@id/user_name"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/user_ranking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/user_name_user_ranking_break"
+                android:text="Alcoholic"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/date_posted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:textSize="12sp"/>
+
+            <!--Line 2 of post -->
+            <TextView
+                android:id="@+id/drink_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/user_name"
+                android:layout_marginBottom="6dp"
+                android:text="Beer"
+                android:textSize="18sp" />
+
+            <!-- Line 3 of post -->
+            <TextView
+                android:id="@+id/drink_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I like beer"
+                android:layout_below="@+id/drink_name"
+                android:background="@drawable/box_around_text_view"
+                android:padding="16dp"/>
+
+            <!-- Bottom line -->
+            <TextView
+                android:id="@+id/average_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/drink_description"
+                android:layout_alignParentStart="true"
+                android:text="123"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/image_average_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/average_rating"
+                android:layout_below="@+id/drink_description"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/empty" />
+
+            <TextView
+                android:id="@+id/comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/drink_description"
+                android:layout_centerHorizontal="true"
+                android:text="420 comments"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/share_button"
+                android:layout_below="@+id/drink_description"
+                android:text="Share"
+                android:layout_alignParentEnd="true"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

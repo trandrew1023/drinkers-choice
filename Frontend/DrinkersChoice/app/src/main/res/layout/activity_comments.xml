@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommentsActivity">
+
+    <TextView
+        android:id="@+id/activity_comments_userandrank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="15sp"
+        android:text="User and Rank" />
+
+    <TextView
+        android:id="@+id/activity_comments_drink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_comments_userandrank"
+        android:layout_alignStart="@+id/activity_comments_userandrank"
+        android:textSize="20sp"
+        android:text="Drink" />
+
+    <TextView
+        android:id="@+id/activity_comments_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_comments_drink"
+        android:layout_alignStart="@+id/activity_comments_userandrank"
+        android:layout_marginLeft="10dp"
+        android:text="Drink Description" />
+
+    <ImageButton
+        android:id="@+id/activity_comments_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_comments_description"
+        android:layout_alignStart="@+id/activity_comments_userandrank"
+        android:src="@drawable/empty"/>
+
+    <ImageButton
+        android:id="@+id/activity_comments_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_comments_description"
+        android:layout_toRightOf="@+id/activity_comments_down"
+        android:src="@drawable/full"/>
+
+    <TextView
+        android:id="@+id/activity_comments_up_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_comments_down"
+        android:layout_alignStart="@+id/activity_comments_userandrank"
+        android:layout_marginTop="-18dp"
+        android:layout_marginLeft="5dp"
+        android:text="------"
+        android:textSize="20sp"
+        android:visibility="invisible"/>
+
+
+    <TextView
+        android:id="@+id/activity_comments_down_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_comments_up"
+        android:layout_toRightOf="@+id/activity_comments_up_line"
+        android:layout_marginTop="-18dp"
+        android:layout_marginLeft="10dp"
+        android:text="------"
+        android:textSize="20sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/activity_comments_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/activity_comments_description"
+        android:text="share" />
+
+    <TextView
+        android:id="@+id/activity_comments_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/activity_comments_userandrank"
+        android:text="Date" />
+
+    <View
+        android:id="@+id/activity_comments_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/activity_comments_up"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/activity_comments_rv"
+        android:layout_width="match_parent"
+        android:layout_height="403dp"
+        android:layout_below="@id/activity_comments_divider"
+        android:layout_above="@id/activity_comments_send"
+        android:orientation="vertical" />
+
+    <EditText
+        android:id="@+id/activity_comments_send"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@id/activity_comments_button"
+        android:layout_marginRight="50dp"
+        android:ems="10"
+        android:hint="Comment"
+        android:inputType="textShortMessage" />
+
+    <ImageButton
+        android:id="@+id/activity_comments_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/activity_send_plane" />
+
+</RelativeLayout>

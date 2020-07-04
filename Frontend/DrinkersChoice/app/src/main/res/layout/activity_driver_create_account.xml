@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        tools:context=".CreateAccountActivity">
+
+        <TextView
+            android:id="@+id/driverTextViewCreateAccount"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="145dp"
+            tools:layout_editor_absoluteY="19dp"
+            android:textColor="?attr/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/driverTextViewFirstName"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Name:"
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="145dp"
+            tools:layout_editor_absoluteY="19dp" />
+
+        <EditText
+            android:id="@+id/driverEditTextFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/driverTextViewFirstName"
+            android:ems="10"
+            android:layout_alignStart="@+id/driverTextViewFirstName"
+            android:inputType="textPersonName"
+            android:hint="Bob"/>
+
+        <TextView
+            android:id="@+id/driverTextViewLastName"
+            android:layout_alignStart="@id/driverTextViewFirstName"
+            android:layout_below="@id/driverEditTextFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name:"
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="145dp"
+            tools:layout_editor_absoluteY="19dp" />
+
+        <EditText
+            android:id="@+id/driverEditTextLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/driverTextViewLastName"
+            android:ems="10"
+            android:layout_alignStart="@+id/driverTextViewFirstName"
+            android:inputType="text"
+            android:hint="Smith"/>
+
+        <TextView
+            android:id="@+id/driverTextViewCreateUsername"
+            android:layout_alignStart="@id/driverTextViewFirstName"
+            android:layout_below="@id/driverEditTextLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Username:"
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="145dp"
+            tools:layout_editor_absoluteY="19dp" />
+
+        <EditText
+            android:id="@+id/driverEditTextCreateUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/driverTextViewFirstName"
+            android:layout_below="@id/driverTextViewCreateUsername"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="bsmith"/>
+
+        <TextView
+            android:id="@+id/driverTextViewEnterEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_alignStart="@id/driverTextViewFirstName"
+            android:layout_below="@id/driverEditTextCreateUsername"
+            android:text="Enter Email:" />
+
+        <EditText
+            android:id="@+id/driverEditTextEnterEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/driverTextViewFirstName"
+            android:layout_below="@id/driverTextViewEnterEmail"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="bsmith@email.com" />
+
+        <TextView
+            android:id="@+id/driverTextViewCreatePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_alignStart="@id/driverTextViewFirstName"
+            android:layout_below="@id/driverEditTextEnterEmail"
+            android:text="Create Password:" />
+
+        <EditText
+            android:id="@+id/driverEditTextCreatePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/driverTextViewFirstName"
+            android:layout_below="@id/driverTextViewCreatePassword"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/driverTextViewConfirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_alignStart="@id/driverTextViewFirstName"
+            android:layout_below="@id/driverEditTextCreatePassword"
+            android:text="Confirm Password:" />
+
+        <EditText
+            android:id="@+id/driverEditTextConfirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/driverTextViewFirstName"
+            android:layout_below="@id/driverTextViewConfirmPassword"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/driverTextViewEnterDOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/driverEditTextConfirmPassword"
+            android:layout_alignStart="@id/driverTextViewFirstName"
+            android:text="Enter Date of Birth:"
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="145dp"
+            tools:layout_editor_absoluteY="19dp" />
+
+        <EditText
+            android:id="@+id/driverEditTextEnterDOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/driverTextViewEnterDOB"
+            android:layout_alignStart="@id/driverTextViewFirstName"
+            android:ems="10"
+            android:hint="mm/dd/yyyy"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/driverTextViewEnterCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/driverEditTextEnterDOB"
+            android:layout_alignStart="@id/driverTextViewFirstName"
+            android:text="Enter Car Information:"
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="145dp"
+            tools:layout_editor_absoluteY="19dp" />
+
+        <EditText
+            android:id="@+id/driverEditTextEnterCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/driverTextViewEnterCar"
+            android:layout_alignStart="@id/driverTextViewFirstName"
+            android:ems="10"
+            android:hint="1995 Silver Ford Ranger"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/driverCreateAccuntButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/driverEditTextEnterCar"
+            android:layout_centerHorizontal="true"
+            android:text="Create" />
+
+        <ImageView
+            android:id="@+id/driverImageViewGreenCheckPass"
+            android:layout_width="48dp"
+            android:layout_height="46dp"
+            android:layout_alignBottom="@+id/driverEditTextConfirmPassword"
+            android:layout_toEndOf="@+id/driverEditTextFirstName"
+            android:visibility="gone"
+            app:srcCompat="@drawable/check" />
+
+        <ImageView
+            android:id="@+id/driverImageViewRedCrossPass"
+            android:layout_width="48dp"
+            android:layout_height="46dp"
+            android:layout_alignBottom="@+id/driverEditTextConfirmPassword"
+            android:layout_toEndOf="@+id/driverEditTextFirstName"
+            android:visibility="gone"
+            app:srcCompat="@drawable/cross" />
+
+        <ImageView
+            android:id="@+id/driverImageViewGreenCheckUser"
+            android:layout_width="48dp"
+            android:layout_height="46dp"
+            android:layout_alignBottom="@+id/driverEditTextCreateUsername"
+            android:layout_toEndOf="@+id/driverEditTextFirstName"
+            android:src="@drawable/check"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/driverImageViewRedCrossUser"
+            android:layout_width="48dp"
+            android:layout_height="46dp"
+            android:layout_alignBottom="@+id/driverEditTextCreateUsername"
+            android:layout_toEndOf="@+id/driverEditTextFirstName"
+            android:src="@drawable/cross"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</ScrollView>

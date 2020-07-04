@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        tools:context=".CreateAccountActivity">
+
+        <TextView
+            android:id="@+id/busTextViewCreateAccount"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Business Account"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="145dp"
+            tools:layout_editor_absoluteY="19dp"
+            android:textColor="?attr/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/busTextViewName"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Company Name:"
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="145dp"
+            tools:layout_editor_absoluteY="19dp" />
+
+        <EditText
+            android:id="@+id/busEditTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/busTextViewName"
+            android:ems="10"
+            android:layout_alignStart="@+id/busTextViewName"
+            android:inputType="text"
+            android:hint="Drinkers Choice"/>
+
+        <TextView
+            android:id="@+id/busTextViewEnterEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_alignStart="@id/busTextViewName"
+            android:layout_below="@id/busEditTextName"
+            android:text="Enter Company Email:" />
+
+        <EditText
+            android:id="@+id/busEditTextEnterEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/busTextViewName"
+            android:layout_below="@id/busTextViewEnterEmail"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="dc@email.com" />
+
+        <TextView
+            android:id="@+id/busTextViewCreatePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_alignStart="@id/busTextViewName"
+            android:layout_below="@id/busEditTextEnterEmail"
+            android:text="Create Password:" />
+
+        <EditText
+            android:id="@+id/busEditTextCreatePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/busTextViewName"
+            android:layout_below="@id/busTextViewCreatePassword"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/busTextViewConfirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_alignStart="@id/busTextViewName"
+            android:layout_below="@id/busEditTextCreatePassword"
+            android:text="Confirm Password:" />
+
+        <EditText
+            android:id="@+id/busEditTextConfirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/busTextViewName"
+            android:layout_below="@id/busTextViewConfirmPassword"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/busCreateAccuntButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/busEditTextConfirmPassword"
+            android:layout_centerHorizontal="true"
+            android:text="Create" />
+
+        <ImageView
+            android:id="@+id/busImageViewGreenCheckPass"
+            android:layout_width="48dp"
+            android:layout_height="46dp"
+            android:layout_alignBottom="@+id/busEditTextConfirmPassword"
+            android:layout_toEndOf="@+id/busEditTextName"
+            android:visibility="gone"
+            app:srcCompat="@drawable/check" />
+
+        <ImageView
+            android:id="@+id/busImageViewRedCrossPass"
+            android:layout_width="48dp"
+            android:layout_height="46dp"
+            android:layout_alignBottom="@+id/busEditTextConfirmPassword"
+            android:layout_toEndOf="@+id/busEditTextName"
+            android:visibility="gone"
+            app:srcCompat="@drawable/cross" />
+
+    </RelativeLayout>
+</ScrollView>

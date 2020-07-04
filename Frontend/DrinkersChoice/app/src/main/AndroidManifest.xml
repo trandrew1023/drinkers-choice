@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.coms309.drinkerschoice">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".CreateAccountActivity" />
+        <activity android:name=".FeedActivity" />
+        <activity android:name=".MakeNewPostActivity" />
+        <activity android:name=".CommentsActivity" />
+        <activity android:name=".WebsocketActivity" />
+        <activity android:name=".RequestRideActivity">
+            <intent-filter android:label="Drinkers Choice">
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/*" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ViewRideRequestsActivity" />
+        <activity android:name=".EditUserAccountActivity" />
+        <activity android:name=".BusinessFeedActivity" />
+        <activity android:name=".ChooseCreatAccountActivity" />
+        <activity android:name=".BusinessCreateAccountActivity" />
+        <activity android:name=".DriverCreateAccountActivity" />
+        <activity android:name=".BusinessMakeNewPostActivity" />
+        <activity android:name=".ViewAcceptedRideRequestsActivity" />
+        <activity android:name=".BusinessLoginActivity"></activity>
+    </application>
+
+</manifest>
